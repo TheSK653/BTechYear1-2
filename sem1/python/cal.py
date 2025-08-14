@@ -1,0 +1,8 @@
+a=int(input('1st no. = '))
+b=int(input('2nd no. = '))
+print('Addition =',a+b)
+print('Substract =',a-b)
+print('Multipication =',a*b)
+print('Divition =',a/b)
+print('Modulas =',a%b)
+print('Exponet =',a**b)
