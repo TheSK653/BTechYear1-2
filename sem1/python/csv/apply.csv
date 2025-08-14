@@ -1,0 +1,22 @@
+sid,cname,major,decision
+123,Berkeley,CS,t
+123,Cornell,EE,t
+123,Stanford,CS,t
+123,Stanford,EE,f
+234,Berkeley,biology,f
+321,MIT,history,f
+321,MIT,psychology,t
+345,Cornell,bioengineering,f
+345,Cornell,CS,t
+345,Cornell,EE,f
+345,MIT,bioengineering,t
+543,MIT,CS,f
+678,Stanford,history,t
+765,Cornell,history,f
+765,Cornell,psychology,t
+765,Stanford,history,t
+876,MIT,biology,t
+876,MIT,marine biology,f
+876,Stanford,CS,f
+987,Berkeley,CS,t
+987,Stanford,CS,t
