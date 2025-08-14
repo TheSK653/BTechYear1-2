@@ -1,0 +1,25 @@
+	
+	Arthematic operator
+	
+	exprassion & statement
+	
+	expresstion   3+2
+	statement	a=3+2
+	
+	a line in python can either be an expression or statement
+	
+	an exprassion is a combination of values, variables, and opperator
+	exprassion needs to be evaluated
+	the evaluation of an exprassion produce a value which is why exprassion can appear on the right hand 
+of an operator
+	
+	floor lower limit
+	ceil upper limit
+	of a no.
+
+Alt metiods
+	a=a+5 & a+=5 
+	+, -, *, / & % its all can be used in similar form
+
+'A' - 'B' = 65 - 
+'a' - 'b' = 

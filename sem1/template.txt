@@ -1,0 +1,44 @@
+
+	format
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body bgcolor=>
+	<font size= color=><center><b><u><i>
+		<br>
+		</b></u></i><p>
+	</font></center>
+</body>
+</html>
+
+
+	bgcolors available
+		aqua, black, blue, fuchsia, gray (or grey),
+		green, lime, maroon, navy, olive, purple, 
+		red, silver, teal, white, and yellow
+		
+		
+		<a href=""></a><br>
+		
+		<img src="">
+
+	<video width="640" height="360" controls>
+		<source src="" type="video/mp4">
+	</video>
+
+	<style>
+		span{color:green}
+		body {background-image: url('C:\Users\windows\Pictures\wallpaper\Scenary.jpg');}
+	</style>
+	<script>
+		funtion hi{alert("Welcome to random things")}
+	</script>
+	
+	
+	Creat a wab page on info of a celebrity
+	any 10 point info about the person with equal spacing, img, hyperlink

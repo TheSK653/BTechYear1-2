@@ -1,0 +1,34 @@
+
+Front end
+
+HTML, CSS, XML, javascript, PHP, JSP, JSf   Bootstrap
+
+
+Back end 
+
+language:- java, python
+framework:- pyramid, djungo
+database:- SRL lite, MYSRL
+
+java:- we use this to develop web servelent 
+
+HTML(.html/.htm)
+#static
+#error free
+#platform independent
+#not case sensetive
+
+TAGS type
+1. pared  2. single
+
+
+<style>--CSS
+<script>--JS
+<meta>
+<nonscript>
+
+<   &lt;    &#60;
+>   &jt;    &#62;
+&   &amp;   &#38;
+"   &quot;  &#34;
+'   &apos;  &#39;

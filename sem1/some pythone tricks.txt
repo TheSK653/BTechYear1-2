@@ -1,0 +1,28 @@
+name='Soham'
+name
+_=' Kundu'
+
+#it prints the given  name with the added string
+
+
+name='Soham Kundu'
+name[3]
+#the charecter gets printed witch is present at the pace of the mentioned number (0123....)
+
+a=int(input("enter the 1st number"))
+
+enter the 1st number4
+b=int(input("enter second no"))
+enter second no6
+c = a+b
+print(c)
+10
+
+String = it is a sequence of charecter enclosed within " or 'xxxxxxxxxxxxxxxswwwwwwwww11d3
+
+
+0:0:2
+
+ms dos command
+dir
+cd folder
