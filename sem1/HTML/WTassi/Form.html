@@ -1,0 +1,43 @@
+<HTML>
+<head>
+<title>ABC INFOTECH</title>
+<style>
+    body{background-color: aquamarine;}
+    table{border: 2px solid black;background-color: aqua;}
+    caption{color:red}
+    td{border: 1px solid black;vertical-align: top;}
+</style>
+</head>
+<body>
+<form method="post">
+<table align="center">
+<caption><h1><u>REGISTRATION FORM</u></h1></caption>
+<tr><td>Name</td><td><input type=text name=t1 required></td></tr>
+<tr><td>Password</td><td><input type=password name=t2 required></td></tr>
+<tr><td>Confirm Password</td><td><input type=password  name=t3 required></td></tr>
+<tr><td>Email</td><td><input type=email name=t4 required></td></tr>
+<tr><td>Contact Number</td><td><input type=number name=t5 required></td></tr>
+<tr><td>Gender</td>
+    <td><input type="radio" name=gen value=male>Male
+    <input type="radio" name=gen value=female>Female</td></tr>
+<tr><td>DOB</td><td><input type="date" name="dob"></td></tr>
+<tr><td>Hightest Qualification</td>
+<td>
+    <select name="HQual"> 
+    <option>Undergraduate</option>
+    <option>Graduate</option>
+    <option>Postgraduate</option>
+    </select>
+</td>
+<tr><td>Languages Known</td>
+    <td><input type="checkbox" name=t6 value=english >English
+    <input type="checkbox" name=t6 value=hindi >Hindi</td></tr>
+<tr><td>Preferred programming Language</td><td><input type="checkbox" name=t7 value=java>Java
+    <input type="checkbox" name=t7 value=c++>C++
+    <input type="checkbox" name=t7 value=python>Python</td></tr>
+<tr><td>Two lines to describe yorself</td><td><textarea rows="2" cols="20"required></textarea></td></tr>
+<th colspan="2"><input type=submit value=SUBMIT></th>
+</table>
+</form>
+</body>
+</HTML>

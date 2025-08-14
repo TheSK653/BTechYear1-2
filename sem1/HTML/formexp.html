@@ -1,0 +1,103 @@
+
+<html>
+	<head>
+		<style>
+			.center{text-align:center}
+		</style>
+		<script>
+			function validate()
+			{
+				var a=document.getElementById("pass").value;
+				var b=document.getElementById("cpass").value;
+				var m=document.getElementById('mob').value;
+				var mob_pattern=/^\d{10}$/;
+				if (a!=b)
+				{
+					alert('Passwords are not matiching');
+					return false;
+				}
+				else if (!m.match(mob_pattern))
+				{
+					alert('Mobile number is not of 10 digit')
+					return false;
+				}
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<form method=post>
+			<table align=center border=2>
+				<tr>
+					<td>
+						UserID
+					</td>
+					<td>
+						<input type=text name=uid>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Password
+					</td>
+					<td>
+						<input type=password name=x id=pass >
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Confirm Password
+					</td>
+					<td>
+						<input type=password name=y id=cpass>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Moble Number
+					</td>
+					<td>
+						<input type="number" name="mob" id="mob">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Img Files
+					</td>
+					<td>
+						<input type=file name=file accept='.jpg,.jpeg,.png'>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Audio Files
+					</td>
+					<td>
+						<input type=file name=file accept='audio/*'>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Video Files
+					</td>
+					<td>
+						<input type=file name=file accept='video/*'>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Media Files
+					</td>
+					<td>
+						<input type=file name=file accept='video/*,Audio/*,picture/*'>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 class=center>
+						<input type=submit name=login onclick="return validate()">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

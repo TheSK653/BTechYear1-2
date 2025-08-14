@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<style>
+			body
+			{
+				background: url('nightsky.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center; 
+			}
+			h1
+			{
+				color: blue;
+				text-align: center;
+				font-size: 40;
+				background-color: aqua;
+				border: 5px solid purple;
+				width: 50%;
+				border-radius: 15px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			font
+			{
+				color: gold;
+				font-size: 25;
+			}
+			table
+			{
+				font-size: 20;
+				color: rgb(229, 255, 0);
+				background-color: blueviolet;
+				border: 10px solid lime;
+				border-radius: 20px;
+				border-collapse: collapse;
+			}
+			th
+			{
+				font-weight: bold;
+				text-transform: uppercase;
+				border: 3px solid red;
+			}
+			td
+			{
+				font:italic;
+				text-transform: uppercase;
+				border: 2px solid skyblue;
+			}
+			form
+			{
+				text-align: center;
+			}
+			p
+			{
+				background-color: blueviolet;
+				text-align: center;
+				width: 500;
+			}
+		</style>
+		<script>
+			function validate()
+			{
+				var a=document.getElementById("t2").value;
+				var b=document.getElementById("t3").value;
+				if (a!=b)
+				{
+					alert('Passwords are not matiching');
+					return false;
+				}
+				return true;
+			}
+		</script>
+	</head>
+<body>
+	<h1>Background Image</h1>
+	<table align="center" >
+		<tr>
+			<th>Order list</th>
+			<th>Unorder list</th>
+			<th>Data detailed list</th>
+			<th rowspan="2" width="70">
+				<font face = "Verdana" size = "5">
+					V<br>e<br>r<br>d<br>a<br>n<br>a
+				</font>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<ol>
+					<li>html</li>
+					<li>CSS</li>
+					<li>JavaScrift</li>
+					<li>PHP</li>
+				</ol>
+			</td>
+			<td>
+				<ul type="square">
+					<li>html</li>
+					<li>html5</li>
+					<li>CSS</li>
+				</ul>
+			</td>
+			<td>
+				<dl>
+					<dt>java</dt>
+					<dd>to learn</dd>
+				</dl>
+			</td>
+		</tr>
+	</table>
+	<form><font><center><p>
+		Name:-  <input type="text" name="name"><br>
+		Gender:-  
+			<input type="radio" name="gen">Male
+			<input type="radio" name="gen">Female<br>
+		Email:-  <input type="email" name="email"><br>
+		Phone no.:-  <input type="number" maxlength="10" name="ph"><br>
+		DOB:-  <input type="date" name="dob"><br>
+		Address:-  <textarea rows="2" name="address"></textarea><br>
+		Coures:- 
+		<select name="course">
+		<option>B Tech.</option>
+		<option>B.C.A.</option>
+		<option>B.B.A.</option>
+		<option>Honors</option></select><br>
+		
+		<caption align="left">Subjects:-</caption> 
+			<table border="" align="center">
+				<tr>
+					<td>
+						<input type="checkbox" name="maths">maths<br>
+						<input type="checkbox" name="english">english<br>
+						<input type="checkbox" name="physics">physics<br>
+						<input type="checkbox" name="computer">computer<br>
+						<input type="checkbox" name="data analitics">data analitics<br>
+					</td>
+				</tr>
+			</table>
+		<button style="margin-top: 10px;">submit button</button><br>
+		<input type="submit" name="submit" onclick="return validate()">
+		<input type="reset" name="reset"><br>   =
+	</font></center></p></form>
+</body>
+</html>

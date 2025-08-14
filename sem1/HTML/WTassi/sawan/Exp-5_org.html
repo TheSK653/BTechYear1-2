@@ -1,0 +1,73 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<script>
+			// Function to check Whether both passwords is same or not.
+			function checkPassword(form) {
+				password1 = form.password1.value;
+				password2 = form.password2.value;
+
+				// If password not entered
+				if (password1 == '')
+					alert ("Please enter Password");
+
+				// If confirm password not entered
+				else if (password2 == '')
+					alert ("Please enter confirm password");
+
+				// If Not same return False.
+				else if (password1 != password2) {
+				alert ("Password did not match: Please try again...")
+					return false;
+				}
+				// If same return True.
+				else
+                {
+                    alert("Password Match: Welcome to GLA University")
+					return true;
+				}
+			}
+		</script>
+		<style>
+			.gla {
+				font-size:40px;
+				color:green;
+				font-weight:bold;
+				text-align:center;
+			}
+			.cse {
+				font-size:17px;
+				color:red;
+				text-align:center;
+				margin-bottom:20px;
+			}
+        </style>
+	</head>
+	<body>
+	    <div class = "gla"> GLA UNIVERSITY LOGIN FORM</div>
+	    <div class = "cse"> Dept. of Computer Engineering & Applications </div>
+		<form onSubmit = "return checkPassword(this)">
+		<table border = 1 align = "center">
+			<tr>
+                <!-- Enter Username -->
+                <td>Username:</td>
+                <td><input type = text name = name size = 10</td>
+			</tr>
+			<tr>
+                <!-- Enter Password. -->
+                <td>Password:</td>
+                <td><input type = password name = password1 size = 10</td>
+			</tr>
+			<tr>
+                <!-- To Confirm Password. -->
+                <td>Confirm Password:</td>
+                <td><input type = password name = password2 size = 10></td>
+			</tr>
+			<tr>
+				<td colspan = 2 align = center>
+				<input type = submit value = "Submit"></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>

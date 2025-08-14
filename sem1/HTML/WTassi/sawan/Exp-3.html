@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>HTML Calculator</title>
+        <style>
+            body{background-color: black;}
+            table
+            {
+                border: 2px solid green;
+                border-radius: 40px;
+            }
+            textarea {
+                padding: 20px 30px;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: rgb(20, 20, 20);
+                color: white;
+                border: none;
+                border-radius: 50px;
+            }
+            button {
+                width: 100%;
+                padding: 20px 50px;
+                background-color: rgb(70, 70, 70);
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                border: none;
+                border-radius: 50px;
+            }
+            .f1{color: lime;}
+        </style>
+        <script>
+        function display(x)
+        {
+            document.getElementById("display").innerHTML+=x;
+        }
+        function evalu()
+        {
+            var y=document.getElementById("display").innerHTML;
+            var z=eval(y);
+            document.getElementById("display").innerHTML=z;
+            // document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML);
+        }
+        function Clear() 
+        {
+            document.getElementById('display').value = '';
+        }
+        </script>
+    </head>
+    <body>
+            <table align="center" cellspacing="5px">
+                <tr>
+                    <td colspan="3">
+                        <textarea id="display" placeholder="Display"></textarea>
+                    </td>
+                    <td><button type="submit" value="c" onclick="Clear()" style="color: red;">c</td>
+                </tr>
+                <tr>
+                    <td><button type=button value="7" onclick=display(7)>7</button></td>
+                    <td><button type=button value="8" onclick=display(8)>8</button></td>
+                    <td><button type=button value="9" onclick=display(9)>9</button></td>
+                    <td><button type=button value="-" onclick="display('-')" class="f1">−</button></td>
+                </tr>
+                <tr>
+                    <td><button type=button value="4" onclick=display(4)>4</button></td>
+                    <td><button type=button value="5" onclick=display(5)>5</button></td>
+                    <td><button type=button value="6" onclick=display(6)>6</button></td>
+                    <td><button type=button value="*" onclick="display('*')" class="f1">×</button></td>
+                </tr>
+                <tr>
+                    <td><button type=button value="1" onclick=display(1)>1</button></td>
+                    <td><button type=button value="2" onclick=display(2)>2</button></td>
+                    <td><button type=button value="3" onclick=display(3)>3</button></td>
+                    <td><button type=button value="/" onclick="display('/')" class="f1">÷</button></td>
+                </tr>
+                    <tr>
+                    <td><button type=button value="*" onclick="display('.')">.</button></td>
+                    <td><button type=button value="0" onclick=display(0)>0</button></td>
+                    <td><button type=submit value="=" onclick=evalu() style="background-color: green;">=</button></td>
+                    <td><button type=button value="+" onclick="display('+')" class="f1">+</button></td>
+                </tr>
+            </table>
+    </body>
+</html>

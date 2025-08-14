@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Largest Number</title>
+        <script>
+            function largest_number()
+            {
+                var n1,n2,n3,max;
+                n1=Number(document.getElementById("n1").value);
+                n2=Number(document.getElementById("n2").value);
+                n3=Number(document.getElementById("n3").value);
+
+                // if (n1>n2 && n1>n3)
+                // {window.alert(n1+" is largest");}
+                // else if (n2>n1 && n2>n3)
+                // {window.alert(n2+" is largest");}
+                // else
+                // {window.alert(n3+" is largest");}
+
+                // if (n1>n2 && n1>n3)
+                // {max=n1;}
+                // else if (n2>n1 && n2>n3)
+                // {max=n2;}
+                // else
+                // {max=n3;}
+                
+                max= Math.max(n1,n2,n3)
+                alert(max+" is largest");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Entery 1<input type="number" id="n1"><br>
+            Entery 2<input type="number" id="n2"><br>
+            Entery 3<input type="number" id="n3"><br>
+            <button type="button" onclick="largest_number()">largest number</button>
+        </form>
+    </body>
+</html>

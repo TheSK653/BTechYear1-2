@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <script>
+            function check()
+            {
+                var uid=document.getElementById('uid').value;
+                var pass=document.getElementById('password').value;
+                if (uid=="Web" && pass=="Technology")
+                {alert("Welcome")}
+                else
+                {alert("Error")}
+            }
+        </script>
+    </head>
+    <body>
+        <form method="post">
+            <table border="1" align="center">
+                <tr>
+                    <td>User name :- </td>
+                    <td><input type="text" name="login" id="uid"><br></td>
+                </tr>
+                <tr>
+                    <td>Password :- </td>
+                    <td><input type="password" name="password" id="password"><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button onclick="check()">Log IN</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>SImple Calculator</title>
+    </head>
+    <style>
+        body{background-color: black;color: aqua;text-align: center;}
+        table{border: 1px solid lime;}
+        h1{font-size: 40;}
+        td{text-align: center;}
+        input{width: 80 ;height: 30;}
+        button{width: 30;height: 30;}
+    </style>
+    <script>
+        function add()
+        {
+            var n1, n2, sum ;
+            n1 = Number(document.getElementById('n1').value);
+            n2 = Number(document.getElementById('n2').value);
+            sum = n1 + n2 ;
+            document.getElementById('result').value = sum;
+        }function sub()
+        {
+            var n1, n2, sub ;
+            n1 = Number(document.getElementById('n1').value);
+            n2 = Number(document.getElementById('n2').value);
+            sub = n1 - n2 ;
+            document.getElementById('result').value = sub;
+        }function mul()
+        {
+            var n1, n2, mul ;
+            n1 = Number(document.getElementById('n1').value);
+            n2 = Number(document.getElementById('n2').value);
+            mul = n1 * n2 ;
+            document.getElementById('result').value = mul;
+        }function div()
+        {
+            var n1, n2, div ;
+            n1 = Number(document.getElementById('n1').value);
+            n2 = Number(document.getElementById('n2').value);
+            div = n1 / n2 ;
+            document.getElementById('result').value = div;
+        }
+    </script>
+    <body>
+        <form>
+            <table align="center" cellspacing="10">
+                <h1>Simple Calculator</h1>
+                <tr>
+                    <td colspan="2">
+                        <input id="n1" placeholder="number"><br>
+                        <input id="n2" placeholder="number">
+                    </td>
+                    <td>
+                        <button type="button" onclick="add()">+</button>
+                        <button type="button" onclick="sub()">-</button><br>
+                        <button type="button" onclick="mul()">*</button>
+                        <button type="button" onclick="div()">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input name="result" id="result" placeholder="result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

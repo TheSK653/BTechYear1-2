@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            p{font-size: 50;color:white;text-align: center;}
+        </style>
+        <script>
+            function rgb()
+            {
+                if (document.getElementById("page").style.backgroundColor=="red")
+                {
+                    document.getElementById("page").style.backgroundColor="green";
+                    document.getElementById('text').innerHTML='GREEN';
+                }
+                else if (document.getElementById("page").style.backgroundColor=="green")
+                {
+                    document.getElementById("page").style.backgroundColor="blue";
+                    document.getElementById('text').innerHTML='BLUE';
+                }
+                else
+                {
+                    document.getElementById("page").style.backgroundColor="red";
+                    document.getElementById('text').innerHTML='RED';
+                }
+            }
+        </script>
+    </head>
+    <body id="page" onload="setInterval(function(){rgb()},1000)">
+        <p id="text"></p>
+    </body>
+</html>
