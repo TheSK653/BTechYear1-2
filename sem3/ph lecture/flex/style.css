@@ -1,0 +1,29 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    height: 100vh;
+    border: 5px solid red;
+    flex-direction: row;
+    /* flex-direction: column; */ 
+    /* justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-wrap: wrap; */
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+#second {
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+#fourth {
+    flex-shrink: 2;
+    flex-grow: 1;
+}

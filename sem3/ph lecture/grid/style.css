@@ -1,0 +1,27 @@
+#container{
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 100px 150px 100px;
+    /* grid-auto-flow: column;      */
+    /* by default row */
+    grid-auto-rows: 90px;
+    /* grid-auto-columns: 90px; */
+}
+div{
+    background-color: red;
+    border: 1px solid black;
+}
+.second{
+    background-color: yellow;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.fourth{
+    background-color: cyan;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

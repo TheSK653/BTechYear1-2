@@ -1,0 +1,28 @@
+/* h1::first-line{
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+}
+p::first-letter{
+    font-size: 100px;
+    color: rgba(0, 255, 0, 0.575);
+}
+h4::after{
+    content: " from coding blocks";
+}
+h4::before{
+    content: "Hello guys. ";
+}
+h4{
+    color: #00ff0077;
+} */
+ul{font-size: 20px;
+    color: red;}
+ol>li{
+    /* font-size: 50px; */
+    /* border: 5px solid yellow; */
+    font-size: 2em;
+}
+body{
+    background-color: black;
+}

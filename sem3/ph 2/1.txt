@@ -1,0 +1,23 @@
+foreach loopX methodV
+foreach is an array method which accepts an callback function
+its doest return anything
+
+
+higher order fxn : map, filter, reduce, sort, every
+
+
+map
+callback V
+arg: item index
+gives new array
+orginal remains same
+length of both same
+
+
+sort and reduce hw
+
+
+// constructor function
+Whenever you call a function with a new keyword in front of it then that function is called constructor function.
+The role of the constructor fxn is to create objects
+Genrally in order to distinguish between a normal function and a constructor fxn we start the constructor fxn with capital letter(not mandatory just a convention)
